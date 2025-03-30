@@ -51,7 +51,7 @@ python setup.py install
 
 ```python
 import torch
-from geoclip import GeoMapCLIP
+from geomapclip import GeoMapCLIP
 
 model = GeoMapCLIP()
 
@@ -78,7 +78,7 @@ In our paper, we show that once trained, our location encoder can assist other g
 
 ```python
 import torch
-from geoclip import LocationEncoder
+from geomapclip import LocationEncoder
 
 gps_encoder = LocationEncoder()
 
@@ -87,20 +87,3 @@ gps_embeddings = gps_encoder(gps_data)
 print(gps_embeddings.shape) # (2, 512)
 ```
 
-## Acknowledgments
-
-This project incorporates code from Joshua M. Long's Random Fourier Features Pytorch. For the original source, visit [here](https://github.com/jmclong/random-fourier-features-pytorch).
-
-## Citation
-
-If you find GeoCLIP beneficial for your research, please consider citing us with the following BibTeX entry:
-
-
-```
-@inproceedings{geoclip,
-  title={GeoCLIP: Clip-Inspired Alignment between Locations and Images for Effective Worldwide Geo-localization},
-  author={Vivanco, Vicente and Nayak, Gaurav Kumar and Shah, Mubarak},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2023}
-}
-```
