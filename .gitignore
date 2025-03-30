@@ -1,0 +1,10 @@
+
+**/.ipynb_checkpoints/
+
+geoclip/finetune/weights/*.pth
+
+geoclip/test/*
+__pycache__/
+*.egg-info/
+**/dist/
+**/build/
