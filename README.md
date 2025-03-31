@@ -1,14 +1,6 @@
 <div align="center">    
  
-# 🌎 GeoMapCLIP: Clip-Inspired Alignment between Locations and Images for Effective Worldwide Geo-localization
-
-[![Paper](http://img.shields.io/badge/paper-arxiv.2309.16020-B31B1B.svg)](https://arxiv.org/abs/2309.16020v2)
-[![Conference](https://img.shields.io/badge/NeurIPS-2023-blue)]()
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geoclip-clip-inspired-alignment-between/photo-geolocation-estimation-on-im2gps3k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-im2gps3k?p=geoclip-clip-inspired-alignment-between)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geoclip-clip-inspired-alignment-between/gps-embeddings-on-geo-tagged-nus-wide-gps)](https://paperswithcode.com/sota/gps-embeddings-on-geo-tagged-nus-wide-gps?p=geoclip-clip-inspired-alignment-between)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geoclip-clip-inspired-alignment-between/photo-geolocation-estimation-on-gws15k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-gws15k?p=geoclip-clip-inspired-alignment-between)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geoclip-clip-inspired-alignment-between/gps-embeddings-on-geo-tagged-nus-wide-gps-1)](https://paperswithcode.com/sota/gps-embeddings-on-geo-tagged-nus-wide-gps-1?p=geoclip-clip-inspired-alignment-between)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/geoclip-clip-inspired-alignment-between/photo-geolocation-estimation-on-yfcc26k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-yfcc26k?p=geoclip-clip-inspired-alignment-between)
+# 🌎 GeoMapCLIP: Finetuned GeoCLIP (Alignment between Locations and Images for Effective Worldwide Geo-localization) for Map images
 
 ![ALT TEXT](/figures/GeoMapCLIP.png)
 
@@ -86,4 +78,6 @@ gps_data = torch.Tensor([[40.7128, -74.0060], [34.0522, -118.2437]])  # NYC and 
 gps_embeddings = gps_encoder(gps_data)
 print(gps_embeddings.shape) # (2, 512)
 ```
+## Acknowledgments
+This project incorporates code and images from Vicente Vivian. For the base model, GeoCLIP, visit https://github.com/VicenteVivan/geo-clip 
 
