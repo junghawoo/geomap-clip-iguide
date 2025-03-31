@@ -79,5 +79,5 @@ gps_embeddings = gps_encoder(gps_data)
 print(gps_embeddings.shape) # (2, 512)
 ```
 ## Acknowledgments
-This project incorporates code and images from Vicente Vivian. For the base model, GeoCLIP, visit https://github.com/VicenteVivan/geo-clip 
+This project incorporates code and images from Vicente Vivan. For the base model, GeoCLIP, visit https://github.com/VicenteVivan/geo-clip 
 
